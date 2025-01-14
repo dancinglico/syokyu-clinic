@@ -1,0 +1,68 @@
+@use "global" as *;
+
+header{
+    height:130px;
+    width:100%;
+
+    @include sp{
+        height:auto;
+    }
+
+    .header-inner{
+        @extend .flex;
+        max-width:1180px;
+        padding: 28px 20px;
+        margin: 0 auto;
+
+        @include sp{
+            max-width: 100%;
+            padding: 12px;
+            flex-direction: column;
+           
+        }
+
+        .header-logo a{
+
+            img{
+                width:263px;
+                height: auto;
+
+                @include sp{
+                    width:140px;
+                }
+            }
+
+        }
+
+        .header-info{
+            text-align: right;
+
+            @include sp{
+                margin-block:20px;
+                text-align: center;
+            }
+
+            p{
+                font-size: rclamp(12, 14);
+                line-height:calc(20.27/14);
+                margin-bottom:5px;
+            }
+
+            img{
+                width:25px;
+                height:auto;
+                vertical-align: auto;
+                margin-right:5px;
+            }
+
+            span{
+                color:$accent-color;
+                font-size: rclamp(18, 24);
+                font-weight: 700;
+                line-height:calc(34.75/24);
+            
+            }
+        }
+
+    }
+}
