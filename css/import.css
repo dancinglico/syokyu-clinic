@@ -149,7 +149,7 @@ header .header-inner .header-info span {
 }
 
 .fv {
-  background-image: url("/img/fv.png");
+  background-image: url("../img/fv.png");
   background-position: center;
   height: 947px;
   background-size: cover;
