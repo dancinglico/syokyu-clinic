@@ -149,7 +149,7 @@ header .header-inner .header-info span {
 }
 
 .fv {
-  background-image: url("/img/fv 1.png");
+  background-image: url("/img/fv.png");
   background-position: center;
   height: 947px;
   background-size: cover;
@@ -283,6 +283,7 @@ header .header-inner .header-info span {
   font-size: clamp(1.2rem, 1.0181818182rem + 0.4848484848vw, 1.6rem);
   line-height: 1.448125;
   margin-bottom: 34px;
+  word-break: keep-all;
 }
 .treatment .treatment-area {
   display: flex;

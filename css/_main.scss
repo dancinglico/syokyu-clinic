@@ -155,6 +155,7 @@
         font-size: rclamp(12, 16);
         line-height: calc(23.17/16);
         margin-bottom: 34px;
+        word-break: keep-all;
     }
 
     .treatment-area {
