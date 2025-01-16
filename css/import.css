@@ -633,7 +633,7 @@ header .header-inner .header-info span {
 .footer-infotable .highlight {
   -webkit-text-decoration: underline #99E5A5 3px;
           text-decoration: underline #99E5A5 3px;
-  text-underline-offset: -2px;
+  text-underline-offset: -1px;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
