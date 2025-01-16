@@ -66,7 +66,7 @@ img {
 .pc-only {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .pc-only {
     display: inherit;
   }
@@ -158,6 +158,12 @@ header .header-inner .header-info span {
   padding-left: 211px;
   padding-bottom: 249px;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fv {
+    background-position: 70%;
+    padding-left: 100px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .fv {
@@ -290,6 +296,11 @@ header .header-inner .header-info span {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .treatment .treatment-area {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .treatment .treatment-area {
     flex-direction: column;
@@ -310,6 +321,13 @@ header .header-inner .header-info span {
 .treatment .box:nth-of-type(2) {
   padding-left: 34px;
   margin-inline: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .treatment .box {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .treatment .box {
@@ -555,11 +573,17 @@ header .header-inner .header-info span {
   padding-bottom: 19px;
   border-bottom: solid #E7E7E7 2px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-infotable dl.schedule-dl {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .footer-infotable dl.schedule-dl {
     width: 100%;
-    padding: 0;
-    display: none;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    margin-bottom: 10px;
   }
 }
 .footer-infotable .first-line {
@@ -592,6 +616,19 @@ header .header-inner .header-info span {
 }
 .footer-infotable p:nth-of-type(3) {
   margin-left: 17px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-infotable p:nth-of-type(3) {
+    display: block;
+    margin-left: 66px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer-infotable p:nth-of-type(3) {
+    display: block;
+    margin-left: 64px;
+    margin-top: 5px;
+  }
 }
 .footer-infotable .highlight {
   -webkit-text-decoration: underline #99E5A5 3px;

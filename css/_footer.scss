@@ -96,10 +96,15 @@
         padding-bottom:19px;
         border-bottom: solid #E7E7E7 2px;
 
+        @include tb{
+            width:100%;
+        }
+
         @include sp{
             width: 100%;
-            padding:0;
-            display: none;
+            padding-top:17px;
+            padding-bottom:19px;
+            margin-bottom:10px;
         }
     }
 
@@ -135,13 +140,28 @@
         margin-bottom:10px;
         display: inline-block;
 
-        &:nth-of-type(2){
+
+        &:nth-of-type(2){ //午前
             margin-left:23px;
+
         }
 
-        &:nth-of-type(3){
+        &:nth-of-type(3){ //午後
             margin-left:17px;
+
+            @include tb{
+                display: block;
+                margin-left: 66px;
+            }
+            
+            @include sp{
+              display: block;
+              margin-left: 64px;
+              margin-top: 5px;
+            }
         }
+
+
     }
 
     .highlight{
